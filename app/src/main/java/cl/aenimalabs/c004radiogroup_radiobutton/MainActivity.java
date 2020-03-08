@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText txt1, txt2;
     private TextView tv1;
-    private RadioButton rb1, rb2;
+    private RadioButton rb1, rb2, rb3,rb4;
     private Button boton;
 
 
@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (TextView)findViewById(R.id.txt_resultado);
         rb1 = (RadioButton)findViewById(R.id.radioButton);
         rb2 = (RadioButton)findViewById(R.id.radioButton2);
+        rb3 = (RadioButton)findViewById(R.id.radioButton3);
+        rb4 = (RadioButton)findViewById(R.id.radioButton4);
 
     }
 
@@ -45,8 +47,18 @@ public class MainActivity extends AppCompatActivity {
            else if (rb2.isChecked() == true){
                int resta = valor1_int-valor2_int;
                String resultado = String.valueOf(resta);
-               tv1.setText(resultado);
+               tv1.setText(resultado);}
+
+       else if (rb3.isChecked() == true){
+           int multiplicar = valor1_int*valor2_int;
+           String resultado = String.valueOf(multiplicar);
+           tv1.setText(resultado);}
+
+       else if (rb4.isChecked() == true){
+           int dividir = valor1_int/valor2_int;
+           String resultado = String.valueOf(dividir);
+           tv1.setText(resultado);}
        }
 
     }
-}
+

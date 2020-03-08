@@ -3,6 +3,8 @@
     <string name="boton">CALCULAR</string>
     <string name="rb1">Sumar</string>
     <string name="rb2">Restar</string>
+    <string name="rb3">Multiplicar</string>
+    <string name="rb4">Dividir</string>
     <string name="tv">Resultado</string>
     <string name="txt_1">Primer Valor</string>
     <string name="txt_2">Segundo Valor</string>
